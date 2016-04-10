@@ -1,11 +1,31 @@
 <?php
-/* session_start();*/
+
    include_once('model/user.php');
+    function userExists($login, $password, $users){
+        foreach($users as $user) {
+            if($user["login"]==$login && $user["password"]==$password)
+                return $user; 
+            } return false; 
+    } 
+$error='';
+$loginname='';
+$fname=''; 
+$current_user='';
+if(isset($_POST['login'] )) 
+{ 
+    $user=userExists($_POST['login'],$_POST['password'],$users);
+    if($user!=false) {
+        $current_user=$user;
+           $GLOBALS['current_user']=$user;
+         setcookie("login",$_POST['login'],time() + 3600, "/","",0);
+         $_COOKIE["login"]=$_POST['login'];
+         }
+}
 
-    function userExists($login, $password, $users){ foreach($users as $user) { if($user["login"]==$login && $user["password"]==$password) return $user; } return false; } $error=''; $loginname=''; $fname=''; if(isset($_POST['login'] )) { $user=userExists($_POST['login'],$_POST['password'],$users); if($user!=false) { $fname =$user['full_name']; $loginname=$_POST['login']; } else { $error='Invalid credentials'; $fname = 'there'; } } else $fname = 'there'; 
+
 ?>
-
     <!DOCTYPE html>
+
 
     <html lang="en" xml:lang="en">
 
@@ -297,18 +317,25 @@
 
                     </div>
                     <aside>
-                        <?php if($fname!='there')
-                        {?>
+
+                        <?php 
+                       
+                        if(isset($_COOKIE["login"])) {
+                        
+                            if ($current_user!='')
+                            {
+                            ?>
                             <div class="weather">
                                 <p class="weatherinfo">
                                     <?php  
-                                    echo "Your rot13'd login is:".str_rot13($loginname)."\n";
-                                    echo "The length of your login is: ".strlen($loginname);
+    
+                                    echo "Your rot13'd login is:".str_rot13( $current_user['login'])."\n";
+                                    echo "The length of your login is: ".strlen( $current_user['login']);
                                 ?>
                                 </p>
                             </div>
                             <?php
-                        }?>
+                        }}?>
                                 <div class="users">
                                     <div class="user">
                                         <figure class="photo"><img src="images/icon-user.png" alt="User Photo"></figure>
