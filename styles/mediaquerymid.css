@@ -1,0 +1,68 @@
+@media screen and (max-width:992px) and (min-width:768px) {
+    .container {
+        margin: 0px 15px;
+    }
+    .logo-wrapper {
+        padding: 5px 30px;
+    }
+    .account {
+        padding: 5px 20px;
+    }
+    .navButton {
+        padding: 3px 21px;
+        border: 1px solid #dedede;
+        border-top-left-radius: 1px;
+        border-top-right-radius: 1px;
+        padding-bottom: 8px !important;
+        font-size: 20px;
+    }
+    nav {
+        height: 50px;
+    }
+    nav ul li {
+        margin: 0.3em 0.6em;
+    }
+    nav ul {
+        display: flex;
+        justify-content: center;
+        border-left-color: 1px solid #f2f2f2;
+    }
+    .navButton2 {
+        visibility: hidden;
+    }
+    .statuses,
+    .usersection,
+    .post,
+    .poststatus {
+        width: 100%;
+    }
+    aside {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    /*under them should be the block(s) that used to be at the right of your screen, in the aside;*/
+    .users {
+        margin: 20px 5px;
+    }
+    aside .user {
+        margin: 20px 5px;
+    }
+    .ads {
+        margin: 20px 5px;
+    }
+    /*the "beta" box at the bottom-right should be at the very bottom;*/
+    .bottom-right {
+        margin: 20px 5px;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .top-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
