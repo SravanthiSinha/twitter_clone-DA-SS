@@ -64,13 +64,7 @@
                 </div>
             </form>
         </main>
-        <footer class="footer" style="bottom:0px;">
-            <nav class="nav-hide">
-                <!--  <a href="maps.html" class="navButton nav-bottom"> We are Here </a>-->
-            </nav>
-            <span class="author-info">Created by : Daniel Alzugaray & Sravanthi Sinha </span>
-        </footer>
-
+        <?php include('views/footer.php'); ?>
 
     </div>
 </body>
