@@ -21,7 +21,6 @@
 <script src="scripts/sticky_smart_header.js"></script>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/leaflet/1.0.0-beta.2/leaflet.css" />
 <script src="https://cdn.jsdelivr.net/leaflet/1.0.0-beta.2/leaflet.js"></script>
 
@@ -30,7 +29,13 @@
 <!-- For maps -->
 <script src="scripts/behaviour.js"></script>
 
-
+<script src="scripts/enablejs.js"></script>
+<script src="scripts/toggle.js"></script>
+<script src="scripts/behaviour.js"></script>
+<script src="scripts/sticky_smart_header.js"></script>
+<script src="scripts/ajax.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js">
+</script>
 </head>
 
 <body>

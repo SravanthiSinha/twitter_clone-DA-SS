@@ -119,7 +119,7 @@ article,
 .usersection,
 .octopus,
 .contactmap,
-.ads,
+.ad,
 .weather {
     clear: left;
     padding: 15px;
@@ -131,8 +131,8 @@ article + article,
 .usersection + .usersection,
 .octopus + .octopus,
 .contact+.contact,
-.ads + .ads,
-.weather+..weather {
+.ad + .ad,
+.weather+.weather {
     border-top: 2px solid #F2F2F2;
 }
 

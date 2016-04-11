@@ -1,8 +1,18 @@
 <?php
   include_once('model/user.php');
- function getuser($login,$users){
+ function getuser($login){
+      global $users;
          foreach($users as $user) {
             if($user["login"]==$login)
+                return $user; 
+            } return false; 
+    } 
+
+
+ function getUserById($id){
+     global $users;
+         foreach($users as $user) {
+            if($user["id"]==$id)
                 return $user; 
             } return false; 
     } 
@@ -19,7 +29,7 @@
                         <?php               
 
                         if(isset($_COOKIE["login"])) {  
-                            $current_user=getuser($_COOKIE["login"],$users);
+                            $current_user=getuser($_COOKIE["login"]);
                             if ($current_user!=false)
                             {                             
                              echo 'Hello, '.($current_user["full_name"]).'!' ;   

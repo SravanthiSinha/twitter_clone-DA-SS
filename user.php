@@ -14,14 +14,11 @@
     <link rel="shortcut icon" type="image/png" href="images/leaf_960_720.png">
     <!-- Fav Icon -->
     <script src="scripts/enablejs.js"></script>
-    <script src="scripts/post_a_status.js"></script>
-    <script src="scripts/reply.js"></script>
     <script src="scripts/toggle.js"></script>
     <script src="scripts/behaviour.js"></script>
     <script src="scripts/sticky_smart_header.js"></script>
     <script src="scripts/ajax.js"></script>
-    <script src="scripts/load_more.js"></script>
-    <script src="scripts/weather.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
 
 </head>

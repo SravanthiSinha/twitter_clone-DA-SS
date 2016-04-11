@@ -14,14 +14,11 @@
     <link rel="shortcut icon" type="image/png" href="images/leaf_960_720.png">
     <!-- Fav Icon -->
     <script src="scripts/enablejs.js"></script>
-    <script src="scripts/post_a_status.js"></script>
-    <script src="scripts/reply.js"></script>
     <script src="scripts/toggle.js"></script>
     <script src="scripts/behaviour.js"></script>
     <script src="scripts/sticky_smart_header.js"></script>
     <script src="scripts/ajax.js"></script>
-    <script src="scripts/load_more.js"></script>
-    <script src="scripts/weather.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
 
 </head>
@@ -35,21 +32,21 @@
                 <div class="usersection">
                     <article class="user">
                         <figure class="photo"><img src="images/icon-user.png" alt="User Photo"></figure>
-                        <h2 class="name">Daniel Alzugaray</h2>
+                        <h2 class="name"><?php echo getUserById(1)["full_name"] ?></h2>
                         <div class="bio">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci iste eius itaque, cum velit quod deleniti, </p>
                         </div>
                     </article>
                     <article class="user">
                         <figure class="photo"><img src="images/icon-user.png" alt="User Photo"></figure>
-                        <h2 class="name">Gloria Stefan</h2>
+                        <h2 class="name"><?php echo getUserById(2)["full_name"] ?></h2>
                         <div class="bio">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci iste eius itaque, cum velit quod deleniti, </p>
                         </div>
                     </article>
                     <article class="user">
                         <figure class="photo"><img src="images/icon-user.png" alt="User Photo"></figure>
-                        <h2 class="name">Sravanthi Sinha</h2>
+                        <h2 class="name"><?php echo getUserById(3)["full_name"] ?></h2>
                         <div class="bio">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci iste eius itaque, cum velit quod deleniti, </p>
                         </div>
