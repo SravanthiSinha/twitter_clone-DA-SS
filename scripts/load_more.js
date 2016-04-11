@@ -3,7 +3,7 @@
  */
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('showmoreButton').addEventListener('click', function loadDoc() {
-        ajaxGet('/statuses-1.html', function showMoreResponses(response) {
+        ajaxGet('/statuses-1.php', function showMoreResponses(response) {
             var a = document.getElementById("showmore");
             a.disabled = true;
             a.style.backgroundColor = "#222252";
