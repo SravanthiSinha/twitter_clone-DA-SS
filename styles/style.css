@@ -1,0 +1,416 @@
+a {
+    color: #b60000;
+}
+
+.clickable {
+    color: #b60000;
+    cursor: pointer;
+}
+
+body {
+    background-color: #F2F5ED;
+}
+
+.container {
+    margin: auto;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+header {
+    border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #73AD21;
+    background-color: #FFFFFF;
+    box-shadow: 5px 8px 5px #EBEBEB;
+}
+
+.logo {
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #73AD21;
+    background-color: #FFFFFF;
+    box-shadow: 5px 8px 5px #EBEBEB;
+    margin-left: 3em;
+    margin-top: 0.1em;
+}
+
+.tagline {
+    font-size: 1.1em;
+    margin-left: 0.5em;
+}
+
+.tag .account {
+    padding: 2px 20px;
+}
+
+.account ul {
+    color: red;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/*| character separating the list items at the top right*/
+
+.account li {
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+.account li + li {
+    border-left: 1px solid green;
+}
+
+
+/* links do not appear as underlined when not hovered
+2 full seconds to change font color and background color
+*/
+
+.account a {
+    text-decoration: none;
+    background-color: white;
+    color: #b60000;
+    transition-property: color background-color;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    -webkit-transition-property: color background-color;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-timing-function: ease;
+}
+
+
+/* on hover  changing the font color of  links and link's background to a very different color
+ 2 full seconds to change font color and background color
+*/
+
+.account a:hover {
+    background-color: #73AD21;
+    text-decoration: underline;
+    color: black;
+    transition-property: color background-color;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    -webkit-transition-property: color background-color;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-timing-function: ease;
+}
+
+nav {
+    text-align: center;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+article .photo img,
+.usersection .photo .img,
+.octopus.photo .img {
+    height: 100px;
+    float: left;
+    padding-left: 20px;
+}
+
+article,
+.user,
+.usersection,
+.octopus,
+.contactmap,
+.ad,
+.weather {
+    clear: left;
+    padding: 15px;
+    min-height: 110px;
+}
+
+article + article,
+.user + .user,
+.usersection + .usersection,
+.octopus + .octopus,
+.contact+.contact,
+.ad + .ad,
+.weather+.weather {
+    border-top: 2px solid #F2F2F2;
+}
+
+.usersection {
+    padding: 0px;
+}
+
+.description {
+    padding: 10px 20px;
+    clear: right;
+}
+
+.statuses,
+.usersection,
+.octopussection,
+.poststatus,
+.contactsection {
+    width: 70%;
+    border: 1px solid #73AD21;
+}
+
+
+/*a small box to welcome  users, and advise them that the application is in beta. */
+
+.bottom-right {
+    font-size: 18px;
+    font-family: Arial;
+    border: 1px solid #73AD21;
+    padding: 5px 0px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+.status .name,
+.octopous .name {
+    font-weight: bold;
+    font-family: arial;
+    float: left;
+}
+
+.date {
+    float: right;
+    margin-right: 1.2em;
+}
+
+h2 {
+    font-weight: bold;
+    font-family: arial;
+}
+
+aside .photo img {
+    height: 50px;
+}
+
+.statuses,
+aside .users,
+aside .ads,
+aside .weather,
+.usersection,
+.octopussection,
+.contactsection,
+.poststatus {
+    margin-top: 1.1em;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 5px 8px 5px #EBEBEB;
+    border: 1px solid #73AD21;
+}
+
+.users {
+    padding-top: 15px;
+}
+
+.usersection,
+.octopussection,
+.contactsection {
+    width: 99%;
+}
+
+.octopus,
+.contact {
+    min-height: 200px;
+}
+
+.octopus .description,
+.octopus h2,
+.contact h2 {
+    padding: 10px 50px;
+}
+
+.octopussection h1,
+.contactsection h1 {
+    font-size: 40px;
+    padding: 50px;
+    font-family: fantasy;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Nav Link Buttons*/
+
+.navButton {
+    background: linear-gradient(#F2F5ED, #FFFFFF);
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 2s, color 2s;
+    border-bottom: #73AD21 solid 0px;
+    background-position: 0 100%;
+    -webkit-transition-property: color background-color;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-timing-function: ease;
+    font-size: 20px;
+}
+
+.navButton:hover {
+    border-bottom: #73AD21 solid 3px;
+    background: linear-gradient(#FFFFFF, #F2F5ED);
+    color: #73AD21;
+    background-position: 0 -100%;
+    -webkit-transition-property: color background-color;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-timing-function: ease;
+    font-size: 20px;
+}
+
+.navButton:active {
+    border-bottom: red solid 3px;
+    background-color: #FFFFFF;
+    color: #73AD21;
+    -webkit-transition-property: color background-color;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-timing-function: ease;
+    font-size: 20px;
+}
+
+.nav-bottom {
+    background: linear-gradient(#F2F5ED, #FFFFFF);
+    border-top: #73AD21 solid 0px;
+    background-position: 0 100%;
+}
+
+.nav-bottom:hover {
+    border-top: #73AD21 solid 3px;
+    background-position: -100% 0;
+}
+
+.nav-bottom:active {
+    border-top: red solid 3px;
+}
+
+.post,
+.reply,
+.showmore {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F2F5ED;
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 2px solid #F2F2F2;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.post div,
+.reply div {
+    align-self: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.showmore div {
+    align-self: center;
+    text-decoration: none;
+}
+
+.showmore {
+    border-radius: 0px 0px 10px 10px;
+}
+
+.postform,
+.replyform {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    width: 100%;
+}
+
+.postcontrols,
+.replycontrols {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0.5em;
+}
+
+.postarea,
+.replyarea {
+    box-sizing: border-box;
+    resize: none;
+    width: 98%;
+    border-radius: 2px;
+    border-color: #F2F5ED;
+    align-self: center;
+}
+
+.reply {
+    border-radius: 5px;
+    clear: left;
+}
+
+._space {
+    width: 10%;
+}
+
+.postbutton,
+.replybutton {
+    font-size: 25px;
+}
+
+.postlocation,
+replylocation {
+    font-size: 16px;
+}
+
+.poststatus {
+    margin: 1em auto;
+    font-size: 18px;
+    font-family: Arial;
+}
+
+.weatherinfo {
+    font-size: 1.12em;
+    margin-bottom: 0.5em;
+}
+
+footer {
+    margin-top: 0.8em;
+    bottom: 0;
+    background-image: url("../images/dark-background.jpg");
+}
+
+footer .nav-hide {
+    padding: 0.6em;
+}
+
+.location {
+    display: none;
+}
+
+
+/* styling the author information in the footer */
+
+.author-info,
+.oct-video {
+    color: white;
+    margin: auto;
+    display: table;
+    padding-bottom: 0.6em;
+}
+
+.oct-video {
+    color: black;
+}
+
+.error {
+    color: red;
+    font-size: 18px;
+    background-color: lightblue;
+}
+
+.account ul li
+{
+    color: #e00;
+}
+
+/*End*/

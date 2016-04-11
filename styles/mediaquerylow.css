@@ -1,0 +1,92 @@
+/*media queries  for width<768px*/
+
+@media screen and (max-width:768px) {
+    /*All of them must be fluid (take as much as they can of the screen's width), with 15px of margins to the left and right of (at least) the text, for the user's reading comfort.*/
+    .container {
+        margin: 0px 15px;
+    }
+    .statuses,
+    .usersection,
+    .post,
+    .poststatus {
+        width: 100%;
+    }
+    /*under them should be the block(s) that used to be at the right of your screen, in the aside;*/
+    aside {
+        width: 100%;
+    }
+    /*the logo should be above the two menus, which should be one above the other;*/
+    .account {
+        padding: 5px 20px;
+    }
+    .navButton {
+        border: 1px solid #dedede;
+        border-top-left-radius: 1px;
+        border-top-right-radius: 1px;
+        padding-bottom: 2px !important;
+        font-size: 21px;
+        height: 20px;
+        display: block;
+    }
+    .navButton2 {
+        border: 1px solid #F2F5ED;
+        border-radius: 3px;
+        padding-bottom: 2px !important;
+        display: none;
+        margin-right: 2em;
+        margin-bottom: 0.5em;
+        background: transparent;
+        border-bottom: 10px double #73AD21;
+        border-top: 5px solid #73AD21;
+        height: 7px;
+        width: 35px;
+        align-self: flex-end;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav-show {
+        display: block;
+        border-left-color: 2px solid #f2f2f2;
+        -webkit-transition-property: display;
+        -webkit-transition-duration: 10s;
+        -webkit-transition-timing-function: ease;
+    }
+    .nav-hide {
+        display: none;
+        -webkit-transition-property: display;
+        -webkit-transition-duration: 2s;
+        -webkit-transition-timing-function: ease;
+    }
+    nav ul li {
+        margin: 0.5em 0.6em;
+    }
+    nav ul {
+        border-left-color: 2px solid #f2f2f2;
+    }
+    h2 {
+        word-wrap: break-word;
+    }
+    .status time {
+        margin-right: 0.2em;
+        font-size: 12px;
+    }
+    .status .name {
+        font-size: 12px;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .bottom-right {
+        padding: 15px;
+    }
+    .top-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
