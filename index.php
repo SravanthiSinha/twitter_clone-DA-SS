@@ -32,6 +32,7 @@ if(isset($_POST['login'] ))
 
     <head>
         <title>Dan and Sravanthi's Twitter Clone Adventure</title>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- CSS style sheet -->
         <link rel="stylesheet" href="styles/reset.css">

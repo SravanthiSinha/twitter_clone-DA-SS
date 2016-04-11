@@ -4,7 +4,9 @@
 
 <head>
     <title>Dan and Sravanthi's Twitter Clone Adventure</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- CSS style sheet -->
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
@@ -37,11 +39,11 @@
 
         <main>
             <h2>Login:</h2>
-            <form class="form-horizontal" method="post" action="index.php" role="form">
+            <form class="form-horizontal" method="post" action="index.php">
                 <div class="form-group">
-                    <label class="control-label col-sm-2" for="Name">Name:</label>
+                    <label class="control-label col-sm-2" for="loginName">Name:</label>
                     <div class="col-sm-5">
-                        <input type="text" class="form-control" id="email" placeholder="Enter User Name" name="login">
+                        <input type="text" class="form-control" id="loginName" placeholder="Enter User Name" name="login">
                     </div>
                 </div>
                 <div class="form-group">

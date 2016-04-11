@@ -61,10 +61,11 @@
                       if(isset($_POST['login'] ) && !isset($_COOKIE["login"])) 
                       {
                             ?>
-                            <span class="error">   <?php echo 'Invalid Credentials' ;}?></span></li>
+                            <span class="error">   <?php echo 'Invalid Credentials' ;?></span></li>
+                    <?php }?>
 
-                    <li><a href="#">Edit my profile</a></li>
-                    <li><a href="logout.php">Log out</a></li>
+                        <li><a href="#">Edit my profile</a></li>
+                        <li><a href="logout.php">Log out</a></li>
                 </ul>
             </div>
         </div>
