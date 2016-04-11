@@ -1,6 +1,7 @@
 <?php
 
-   include_once('model/user.php');
+ include_once('model/user.php');
+ include_once('model/status.php');
     function userExists($login, $password, $users){
         foreach($users as $user) {
             if($user["login"]==$login && $user["password"]==$password)
@@ -81,10 +82,10 @@ if(isset($_POST['login'] ))
                         </div>
                         <article class="status">
                             <figure class="photo"><img src="images/icon-user.png" alt="User Photo"></figure>
-                            <h1 class="name">Daniel Alzugaray</h1>
+                            <h1 class="name"><?php echo getuserByStatusId(1)["full_name"] ?></h1>
                             <time class="date">2015-01-31</time>
                             <div class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae.
+                                <?php echo getStatusById(1)["status"] ?>
                             </div>
                             <div class="reply">
                                 <div class="replyAll" data-replyindex="1"> Reply</div>
@@ -104,10 +105,10 @@ if(isset($_POST['login'] ))
                         </article>
                         <article class="status">
                             <figure class="photo"><img src="images/icon-user.png" alt="User Photo"></figure>
-                            <h1 class="name">Sravanthi Sinha</h1>
+                            <h1 class="name"><?php echo getuserByStatusId(2)["full_name"] ?></h1>
                             <time class="date">2015-01-31</time>
                             <div class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae.
+                                <?php echo getStatusById(2)["status"] ?>
                             </div>
                             <div class="reply">
                                 <div class="replyAll" data-replyindex="2"> Reply</div>
@@ -127,10 +128,10 @@ if(isset($_POST['login'] ))
                         </article>
                         <article class="status">
                             <figure class="photo"><img src="images/icon-user.png" alt="User Photo"></figure>
-                            <h1 class="name">Daniel Alzugaray</h1>
+                            <h1 class="name"><?php echo getuserByStatusId(3)["full_name"] ?></h1>
                             <time class="date">2015-01-31</time>
                             <div class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae.
+                                <?php echo getStatusById(3)["status"] ?>
                             </div>
                             <div class="reply">
                                 <div class="replyAll" data-replyindex="3"> Reply</div>
@@ -150,10 +151,10 @@ if(isset($_POST['login'] ))
                         </article>
                         <article class="status">
                             <figure class="photo"><img src="images/icon-user.png" alt="User Photo"></figure>
-                            <h1 class="name">Gloria Stefan</h1>
+                            <h1 class="name"><?php echo getuserByStatusId(4)["full_name"] ?></h1>
                             <time class="date">2015-01-31</time>
                             <div class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae.
+                                <?php echo getStatusById(4)["status"] ?>
                             </div>
                             <div class="reply">
                                 <div class="replyAll" data-replyindex="4"> Reply</div>
@@ -173,10 +174,10 @@ if(isset($_POST['login'] ))
                         </article>
                         <article class="status">
                             <figure class="photo"><img src="images/icon-user.png" alt="User Photo"></figure>
-                            <h1 class="name">Gloria Stefan</h1>
+                            <h1 class="name"><?php echo getuserByStatusId(5)["full_name"] ?></h1>
                             <time class="date">2015-01-31</time>
                             <div class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae. orem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae.
+                                <?php echo getStatusById(5)["status"] ?>
                             </div>
                             <div class="reply">
                                 <div id="replyAll" class="replyAll" data-replyindex="5"> Reply</div>
@@ -196,10 +197,10 @@ if(isset($_POST['login'] ))
                         </article>
                         <article class="status">
                             <figure class="photo"><img src="images/icon-user.png" alt="User Photo"></figure>
-                            <h1 class="name">Gloria Stefan</h1>
+                            <h1 class="name"><?php echo getuserByStatusId(6)["full_name"] ?></h1>
                             <time class="date">2015-01-31</time>
                             <div class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae.
+                                <?php echo getStatusById(6)["status"] ?>
                             </div>
                             <div class="reply">
                                 <div class="replyAll" data-replyindex="6"> Reply</div>
@@ -220,10 +221,10 @@ if(isset($_POST['login'] ))
 
                         <article class="status">
                             <figure class="photo"><img src="images/icon-user.png" alt="User Photo"></figure>
-                            <h1 class="name">Gloria Stefan</h1>
+                            <h1 class="name"><?php echo getuserByStatusId(7)["full_name"] ?></h1>
                             <time class="date">2015-01-31</time>
                             <div class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae.
+                                <?php echo getStatusById(7)["status"] ?>
                             </div>
                             <div class="reply">
                                 <div class="replyAll" data-replyindex="7"> Reply</div>
@@ -243,10 +244,10 @@ if(isset($_POST['login'] ))
                         </article>
                         <article class="status">
                             <figure class="photo"><img src="images/icon-user.png" alt="User Photo"></figure>
-                            <h1 class="name">Gloria Stefan</h1>
+                            <h1 class="name"><?php echo getuserByStatusId(8)["full_name"] ?></h1>
                             <time class="date">2015-01-31</time>
                             <div class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae. orem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae.
+                                <?php echo getStatusById(8)["status"] ?>
                             </div>
                             <div class="reply">
                                 <div class="replyAll" data-replyindex="8"> Reply</div>
@@ -266,10 +267,10 @@ if(isset($_POST['login'] ))
                         </article>
                         <article class="status">
                             <figure class="photo"><img src="images/icon-user.png" alt="User Photo"></figure>
-                            <h1 class="name">Gloria Stefan</h1>
+                            <h1 class="name"><?php echo getuserByStatusId(9)["full_name"] ?></h1>
                             <time class="date">2015-01-31</time>
                             <div class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae. orem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae.
+                                <?php echo getStatusById(9)["status"] ?>
                             </div>
                             <div class="reply">
                                 <div class="replyAll" data-replyindex="9"> Reply</div>
@@ -289,10 +290,10 @@ if(isset($_POST['login'] ))
                         </article>
                         <article class="status">
                             <figure class="photo"><img src="images/icon-user.png" alt="User Photo"></figure>
-                            <h1 class="name">Gloria Stefan</h1>
+                            <h1 class="name"><?php echo getuserByStatusId(10)["full_name"] ?></h1>
                             <time class="date">2015-01-31</time>
                             <div class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae. orem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis, omnis. Non autem maxime accusantium, dignissimos quam atque eaque veritatis, quod obcaecati cumque earum consequuntur tenetur esse repellendus itaque quae.
+                                <?php echo getStatusById(10)["status"] ?>
                             </div>
                             <div class="reply">
                                 <div class="replyAll" data-replyindex="10"> Reply</div>
@@ -340,7 +341,9 @@ if(isset($_POST['login'] ))
                                     <div class="user">
                                         <figure class="photo"><img src="images/icon-user.png" alt="User Photo"></figure>
                                         <div class="name">
-                                            <p>Daniel Alzugaray</p>
+                                            <p>
+                                                <?php echo getuserById(1)["full_name"] ?>
+                                            </p>
                                         </div>
                                         <div class="bio">
                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci iste eius itaque, cum velit quod deleniti, </p>
@@ -349,7 +352,9 @@ if(isset($_POST['login'] ))
                                     <div class="user">
                                         <figure class="photo"><img src="images/icon-user.png" alt="User Photo"></figure>
                                         <div class="name">
-                                            <p>Gloria Stefan</p>
+                                            <p>
+                                                <?php echo getuserById(2)["full_name"] ?>
+                                            </p>
                                         </div>
                                         <div class="bio">
                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci iste eius itaque, cum velit quod deleniti, </p>

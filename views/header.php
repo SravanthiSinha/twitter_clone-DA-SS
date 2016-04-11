@@ -16,6 +16,24 @@
                 return $user; 
             } return false; 
     } 
+ function getStatusById($id){
+     global $statuses;
+         foreach($statuses as $status) {
+            if($status["id"]==$id)
+                return $status; 
+            } return false; 
+    } 
+
+ function getuserByStatusId($id){
+     global $statuses;
+     global $users;
+         foreach($statuses as $status) {
+            if($status["id"]==$id)
+            {
+                return getUserById($status["user_id"]);
+            }
+            } return false; 
+    } 
 ?>
     <header class="header" style="top:0px;">
         <div class="top-header">
